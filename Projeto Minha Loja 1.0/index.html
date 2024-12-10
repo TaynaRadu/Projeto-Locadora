@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projeto Javascript</title>
+
+    <link rel="stylesheet" href="css/style.css" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <script src="js/script1.js"></script>
+  </head>
+
+  <body>
+    <header>
+      <h1>Minha Loja 1.0</h1>
+    </header>
+
+    <main>
+      <div class="tittle">
+        <h2>Produtos</h2>
+        <span>Lista de produtos</span>
+      </div>
+
+      <div class="card">
+        <div class="lineInput">
+          <label>Produto</label>
+          <input type="text" id="produto" />
+        </div>
+
+        <div class="lineInput">
+          <label>Preço</label>
+          <input type="text" id="preco" placeholder="Valor do produto" />
+        </div>
+
+        <h2>CONTROLE DE PRODUTOS</h2>
+        <button onclick="produto.salvar()">salvar</button>
+        <button onclick="produto.excluir()">Deletar</button>
+      </div>
+
+      <div class="content">
+        <table border="1">
+          <thead>
+            <th class="center">ID</th>
+            <th>Produto</th>
+            <th>Preço</th>
+            <th class="center">Ações</th>
+          </thead>
+          <tbody>
+            <tr id="tbody"></tr>
+          </tbody>
+        </table>
+      </div>
+    </main>
+  </body>
+</html>
